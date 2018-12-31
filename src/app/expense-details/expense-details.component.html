@@ -1,0 +1,7 @@
+<mat-card *ngIf="expense" class="expenses">
+  <h2 mat-line>Expense Details</h2>
+  <div><span>Title: </span>{{expense.title}}</div>
+  <div><span>Amount: </span>{{expense.amount}}</div>
+  <div><span>ID: </span>{{expense.id}}</div>
+</mat-card>
+<router-outlet></router-outlet>

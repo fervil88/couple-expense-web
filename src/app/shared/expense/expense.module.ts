@@ -1,0 +1,20 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+@NgModule({
+  declarations: [],
+  imports: [
+    CommonModule
+  ]
+})
+export class ExpenseModule {
+
+        title = '';
+        quotaStart = '';
+        quotaEnd = '';
+        amount = '';
+        individual = '';
+        owner = '';
+        creationDateTime = '';
+        description = '';
+ }

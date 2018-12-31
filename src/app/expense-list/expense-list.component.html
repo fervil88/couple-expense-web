@@ -1,0 +1,22 @@
+<mat-card>
+  <mat-toolbar color="primary">
+    <span>Expense report</span>
+  </mat-toolbar>
+  <mat-card-header>
+    <span>Expense List</span>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item *ngFor="let expense of expenses">
+        <h3 mat-line>
+          <button mat-raised-button color="accent" [routerLink]="['/expense-edit', expense.id]">{{expense.title}}
+          </button>
+        </h3>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+
+  <button mat-fab color="primary" [routerLink]="['/expense-add']">Add</button>
+</mat-card>
+<router-outlet></router-outlet>
+
