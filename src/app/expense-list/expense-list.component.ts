@@ -29,7 +29,7 @@ export class ExpenseListComponent implements OnInit {
     delete(id: String, i: number) {
         this.expenseService.delete(id).subscribe(() => {
             this.expenses.splice(i, 1);
-            this.expenses = JSON.parse(JSON.stringify(this.expenses))
+            this.expenses = JSON.parse(JSON.stringify(this.expenses));
         }, error => console.error(error));
     }
 

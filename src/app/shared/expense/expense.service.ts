@@ -8,7 +8,7 @@ import { Observable } from 'rxjs/Observable';
 export class ExpenseService {
     constructor(private http: HttpClient) { }
 
-    private userUrl = 'http://localhost:8181';
+    private userUrl = 'http://localhost:8080';
 
     public getAll(): Observable<any> {
         return this.http.get(this.userUrl + '/expenses');
