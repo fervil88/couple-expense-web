@@ -22,7 +22,7 @@ export class ExpenseEditComponent implements OnInit {
 
     ngOnInit() {
         const id = this.route.snapshot.paramMap.get('id');
-        this.expenseSubscription = this.route.params.subscribe(params => {
+        this.expenseSubscription = this.route.params.subscribe(() => {
             if (id) {
                 this.expenseService.get(id).subscribe((expense: any) => {
                     if (expense) {
@@ -40,7 +40,8 @@ export class ExpenseEditComponent implements OnInit {
     }
 
     gotoList() {
-        this.router.navigate(['/expense-list']);
+        this.ngOnInit();
+        /*this.router.navigate(['/expense-list']);*/
     }
 
     delete(id: String) {

@@ -1,0 +1,61 @@
+@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+
+table {
+  width: 100%;
+  vertical-align: middle;
+  display:flex;
+  justify-content:flex-end;
+}
+.mat-column-title {
+  flex: 0 0 21%;
+  border-bottom: none;
+  outline: none;
+  vertical-align: middle;
+}
+.mat-column-quotaStart {
+  flex: 0 0 7%;
+  border-bottom: none;
+  outline: none;
+  vertical-align: middle;
+}
+.mat-column-quotaEnd {
+  flex: 0 0 7%;
+  border-bottom: none;
+  outline: none;
+  vertical-align: middle;
+}
+.mat-column-amount {
+  flex: 0 0 14%;
+  border-bottom: none;
+  outline: none;
+  vertical-align: middle;
+}
+.mat-column-individual {
+  flex: 0 0 7%;
+  border-bottom: none;
+  outline: none;
+  vertical-align: middle;
+}
+.mat-column-owner {
+  flex: 0 0 14%;
+  border-bottom: none;
+  outline: none;
+  vertical-align: middle;
+}
+.mat-column-creationDateTime {
+  flex: 0 0 14%;
+  border-bottom: none;
+  outline: none;
+  vertical-align: middle;
+}
+.mat-column-actions {
+  flex: 0 0 14%;
+  border-bottom: none;
+  outline: none;
+  vertical-align: middle;
+}
+
+.mat-cell, .mat-header-cell {
+  overflow: hidden;
+  word-wrap: break-word;
+}

@@ -1,4 +1,6 @@
 import { MatButtonModule, MatCardModule, MatInputModule, MatListModule, MatToolbarModule } from '@angular/material';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ExpenseService } from './shared/expense/expense.service';
@@ -38,6 +40,8 @@ import { ExpenseAddComponent } from './expense-add/expense-add.component';
         MatInputModule,
         MatListModule,
         MatToolbarModule,
+        MatTableModule,
+        MatPaginatorModule,
         FormsModule
     ],
     providers: [ExpenseService,
