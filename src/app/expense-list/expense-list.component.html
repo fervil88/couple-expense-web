@@ -21,8 +21,8 @@
   </div><!-- /.container-fluid -->
   </nav>
 </mat-card>
-<div class="mat-elevation-z8">
-  <mat-table [dataSource]="expenses" #table>
+<div class="lessons-table mat-elevation-z8">
+  <mat-table [dataSource]="dataSource" #table>
 
     <ng-container matColumnDef="title">
       <th mat-header-cell *matHeaderCellDef> TITLE </th>
@@ -71,7 +71,7 @@
     <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
 
   </mat-table>
-  <mat-paginator [pageSizeOptions]="[5, 10, 15]" showFirstLastButtons></mat-paginator>
+  <mat-paginator #paginator [pageSizeOptions]="[5, 10, 15]" showFirstLastButtons></mat-paginator>
 </div>
 
 <button mat-fab color="primary" [routerLink]="['/expense-add']">Add</button>
